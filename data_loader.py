@@ -24,4 +24,4 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
         model=EMBED_MODEL,
         input=texts,
     )
-    return [item.embeddings for item in response.data]
+    return [item.embedding for item in response.data]
